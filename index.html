@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+
+    <style>
+        #container{
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            border: solid 1px white;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            background-image: url(./img/paysage-urbain-cyberpunk_23-2150712616.avif);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0px 0px 16px 2px purple;
+        }
+
+        #diapo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+
+        img{
+            width: 200px;
+            height: 150px;
+            border-radius: 6px;
+            border: solid 1px purple;
+        }
+
+        #searchBar{
+            width: 50%;
+            height: 32px;
+            border-radius: 8px;
+            font-size: 26px;
+            text-align: center;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+
+    <!-- Exercice 1 :  -->
+    <input type="text" name="" id="userInput" placeholder="Tapez quelque chose...">
+    <p id="message"></p>
+    <button id="btn">Valider</button>
+    <br><br>
+    <br><br>
+    <!-- Exercice 2 :  -->
+    <input type="number" name="" id="number1">
+    <input type="number" name="" id="number2">
+    <button id="calculate">Calculer</button>
+    <p id="result">Résultat : </p>
+    <br><br>
+    <br><br>
+    <!-- Exercice 3 :  -->
+    <div id="container"></div>
+    <div id="diapo">
+        <img src="./img/paysage-urbain-cyberpunk_23-2150712616.avif" alt="" class="image-diapo">
+        <img src="./img/il-giappone-di-notte-con-i-cartelli-al-neon_278265-470.avif" alt="" class="image-diapo">
+        <img src="./img/nuit-rue-au-neon-dans-centre-ville-villes-japonaises-telles-que-centre-tokyo_442713-6723.avif" alt="" class="image-diapo">
+        <img src="./img/ville-neon-haute-resolution-tres-detaillee-japon-bonde_954677-352.avif" alt="" class="image-diapo">
+    </div>
+    <br><br>
+    <br><br>
+    <!-- Exercice 4 :  -->
+    <input type="text" name="" id="searchBar">
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- Énoncé : 
+
+Crée un champ de saisie <input id="userInput"
+placeholder="Tapez quelque chose...">, 
+un élément <p
+id="message"></p> pour afficher un message et un bouton. 
+Lorsque
+l'utilisateur tape un mot précis "Bonjour" et clique sur le bouton, affiche
+le message "Bonne journée !" Dans ces cas-là, la couleur du message
+doit être vert.
+S'il tape "Au revoir", affiche "À la prochaine !". 
+Pour toute
+autre saisie, affiche "Je ne comprends pas" en rouge. -->
+
+<!-- Énoncé : 
+
+Crée deux champs de saisie <input type="number" id="number1">
+et <input type="number" id="number2">, 
+ainsi qu'un bouton <button id="calculate">Calculer</button>. 
+Ajoute un élément <p id="result">Résultat : </p> pour afficher le résultat.
+Lors du clic sur "Calculer", affiche la somme des deux nombres dans l'élément result. -->
